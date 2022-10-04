@@ -1,0 +1,48 @@
+<!-- YONNY DARNEY ERAZO ORTIZ
+CC:1089292612-->
+<html>
+   <head>
+   <meta charset="utf-8">
+     <title></title>
+     <script>
+     function notaParcial()
+     {
+      var x1,x2,x3;
+       x1=parseFloat(document.getElementById('txt1').value);
+       x2=parseFloat(document.getElementById("txt2").value);
+       x3=parseFloat(document.getElementById("txt3").value);
+	  var pro=(x1+x2+x3)/3;
+	  if (x1<=7 & x2<=7 & x3<=7)
+	  {
+        if (pro>=5)
+	    {
+	    console.log( ": Aprovado");
+		
+	    }
+	      else if (pro<3)
+	       {
+	         console.log(": Reprovado");
+			
+	       }
+	      else 
+		     {
+			  console.log( ": preseta examen");
+			 
+		     }
+	  }
+	  else { console.log("Error");
+	        
+     }		
+     
+     </script>
+   </head>
+  <body>
+  
+     <P> BIENVENIDOPS A SUS NOTAS PARCIALES</P>
+     Ingrese la Nota 1: <input type="text" name="txt1" id="txt1"><br>
+     Ingrese la Nota 2: <input type="text" name="txt2" id="txt2"><br>
+     Ingrese la Nota 3: <input type="text" name="txt3" id="txt3"><br>
+     <button onclick=notaParcial() >Aceptar</button>
+    
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function sumadigitos(numero) {
+   var formato_string=String(numero),
+       transforma_array=formato_string.split(''),
+       suma_digitos=transforma_array.reduce(function(valorAnterior, valorActual, indice, vector){
+           return 1*valorAnterior + (isNaN(1*valorActual)? 0: 1*valorActual);
+       },0);
+  return suma_digitos;
+}
+
+console.log(sumadigitos(123456789));
+
+    </script>
+</body>
+</html>

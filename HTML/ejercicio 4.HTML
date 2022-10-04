@@ -1,0 +1,34 @@
+<!--LisbethSamboni
+CC.1058977849-->
+
+<!DOCTYPE html>
+<html>
+      <head> 
+            <script>
+function parimpar(numero)
+{
+   if(numero%2==0)
+   {
+     document.getElementById("respuesta").innerHTML="El numero es par";
+   }
+ else 
+{
+  if(numero%2!=0)
+   {  
+     document.getElementById("respuesta").innerHTML="El numero es impar";
+   }
+ }
+}
+          </script>
+</head>
+      
+     <body>
+<b>Bienvenidos</b>
+      <b></b>
+      <input type="text" id="txtNombre">
+      <btton onclick=parimpar(document.getElementById("txtNombre").value)>Aceptar</button>
+<p id="respuesta"></p>
+
+</body>
+</html>
+                           

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>MULTIPLOS</h1>
+    <p></p>
+    <p>Ingrese el numero a Multiplicar</p>
+    <input type="text" id="NumMul">
+    <p>Ingrese la cantidad de Multiplos a imprimir</p>
+    <input type="text" id="Limite">
+    <button onclick=Multiplos()>Aceptar</button>
+    <script>
+function Multiplos(n1=parseInt(document.getElementById("NumMul").value), n2=parseInt(document.getElementById("Limite").value), res) {
+    document.write("Los multiplos de "+n1+" hasta "+n2+" son:   ")
+    for(i=1; i<=n2; i++){
+res=n1*i
+document.writeln(res);
+    }
+}
+    </script>
+</body>

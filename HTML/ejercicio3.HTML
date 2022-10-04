@@ -1,0 +1,36 @@
+<!--LisbethSamboni
+CC.1058977849-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+function posNeg(numero)
+{
+	if(numero==0)
+	{document.getElementById("respuesta").innerHTML="El numero es igual a CERO";
+	 }
+  else
+  {
+	if(numero>0)
+	{
+	document.getElementById("respuesta").innerHTML="El numero es positivo";
+  	}
+	else
+	{
+document.getElementById("respuesta").innerHTML="El numero es negativo";
+   	}
+  }
+}
+	</script>
+</head>
+
+	<body>
+<b>Bienvenido</b>
+	<p></p>
+	<input type="text" id="txtNombre">
+	<button onclick=posNeg(document.getElementById("txtNombre").value)>Aceptar</button>
+<p  id="respuesta"></p>
+
+</body>
+</html>

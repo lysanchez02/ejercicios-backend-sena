@@ -1,0 +1,38 @@
+<!--LeyderSanchez
+CC.1061544819-->
+
+<!DOCTYPE html>
+<html>
+ <head>
+ </head>
+   <body>
+<h2>impares en un intervalo</h2>
+<h3>se listan los impares en un intervalo definido por el usuario.</h3>
+
+<p id="demo"></p>
+
+<input type="text" id="inicio">
+<input type="text" id="final">
+
+<button onclick=impares()>aceptar</button>
+
+<script>
+  function impares()
+  {
+ var vinicio=parseInt(document.getElementById("inicio").value);
+ var vfinal=parseInt(document.getElementById("final").value);
+  for(var i=vinicio; i<vfinal; i++)
+   {
+   if(i%2!=0)
+	{
+   		console.log(i)
+  	}
+ 
+   }
+
+}
+
+</script>
+</body>
+</html>
+

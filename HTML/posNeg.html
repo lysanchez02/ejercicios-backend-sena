@@ -1,0 +1,33 @@
+<!--LeyderSanchez
+CC.1061544819-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+function posNeg(numero)
+{
+	if(numero%2==0)
+	{document.getElementById("respuesta").innerHTML="El numero es par";
+	 }
+  else
+  {
+	if(numero%2!=0)
+	{
+	document.getElementById("respuesta").innerHTML="El numero es impar";
+  	}
+	
+  }
+}
+	</script>
+</head>
+
+	<body>
+<b>Bienvenido</b>
+	<p></p>
+	<input type="text" id="txtNombre">
+	<button onclick=posNeg(document.getElementById("txtNombre").value)>Aceptar</button>
+<p  id="respuesta"></p>
+
+</body>
+</html>

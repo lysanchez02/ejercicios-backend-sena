@@ -1,0 +1,44 @@
+package basico.funcion;
+
+
+public class BasicoFuncion {
+
+
+  public static void main()
+{
+int num1=4
+int num2=3
+int  suma=0;
+int multiplicacion
+recibeSuma=mariavalor(mun1, num2);
+System.out. println("maria realizo suma con dato"+ num1+"+" num2+" con resultado"+ recibesuma);
+
+recibemultiplicacion=mariamlt(mun1, num2);
+
+System.out. println("maria realizo multiplicacion con dato"+ num1+"+" num2+" con resultado"+ recibemultiplicacion);
+}
+        static void mariaRefrencia( int num1 int num2)
+
+       
+   { 
+int suma=0;
+suma= num1 + num2;
+System.out.println(" maria realizo suma con dato" + num1+"+"+ num2 + "con resultado"+ suma);
+
+}
+int mariaValor( int num1, int num2)
+ {
+int suma = 0;
+suma= num1 +  num2
+return suma 
+}
+
+
+int mariaMult( int num1, int num2)
+ {
+int suma = 0;
+suma= num1 +  num2
+return suma 
+}
+
+}

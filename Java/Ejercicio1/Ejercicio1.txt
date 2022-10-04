@@ -1,0 +1,16 @@
+import java.util.Scanner
+  public class Ejercicio1{
+  public static void main(String args []){
+
+   Scanner num = new Scanner(System.in);
+    int val;
+    val = num.nextint();
+ 
+
+if(val % 2 ==0){
+	System.out.println("El valor que ingresaste es divisible por 2"+val)
+   }else{
+	System.out.println("El valor no es divisible por 2")
+   }
+  }
+ }

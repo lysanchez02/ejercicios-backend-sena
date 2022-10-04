@@ -1,0 +1,39 @@
+
+<!--LeyderSanchez
+CC.1061544819-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+   
+  </head>
+  <body>
+
+<h2>primeros 20 numeros pares</h2>
+<h3>se listan los primeros 20 pares</h3>
+
+<p id="demo"></p>
+
+<button onclick=pares()>Aceptar</button>
+
+<script>
+      var contador=0;
+      let text=""
+         for(let i=1;contador<20;i++)
+
+         {
+            if(i%2==0)
+            {
+              text+=((contador+1)+":"+i+"<br>");
+              contador++;
+              console.log(i);
+             
+            }
+         }
+    document.getElementById("demo").innerHTML=text;
+
+
+   </script>
+
+  </body>
+</html>

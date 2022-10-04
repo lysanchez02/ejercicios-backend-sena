@@ -1,0 +1,150 @@
+import java.util.Scanner; 
+
+public class probando 
+{
+        
+    static Scanner sc = new Scanner (System.in);
+      
+      /*
+       String name = sc.nextLine();
+       char gender= sc.next().charAt(0);
+       int age = sc.nextInt();
+       long mobile = sc.nextInt();
+       double average= sc.nextDouble();
+*/
+       
+    static int recibeacumu = 1; //Acumulador
+    static int suma = 0;
+    static double peso ;
+    String recibenombre;
+    static int i;
+    public static void main(String[]args)
+            
+    {
+        
+       System.out.println("ingrese cada una de las letras de su nombre");
+       char primeraletra = sc.next().charAt(0);  //Para concatena
+       char segundaletra = sc.next().charAt(0);  //Para concatenar
+       char terceraletra = sc.next().charAt(0);  //Para concatenar
+       char cuartaletra = sc.next().charAt(0);  //Para concatenar
+       char quintaletra = sc.next().charAt(0);  //Para concatenar
+       char sextaletra  = sc.next().charAt(0);  //Para concatenar
+       char septimaletra = sc.next().charAt(0);  //Para concatenar
+
+       System.out.println("ingrese su peso");
+       double peso = sc.nextDouble();
+       
+       String recibenombre=nombrepeso (primeraletra, segundaletra, terceraletra,cuartaletra,quintaletra,sextaletra, septimaletra,  peso);
+        System.out.println("su nombre y peso es:"+recibenombre); 
+       System.out.println("Ingresa un dato entero");
+       int nume1=sc.nextInt();
+       System.out.println("Ingresa un dato entero");
+       int nume2=sc.nextInt(); //Para la suma y multiplicacion
+       
+       System.out.println("Ingresa una letra");
+       char letra1 = sc.next().charAt(0);  //Para concatenarl
+       System.out.println("Ingresa una letra");
+       char letra2 = sc.next().charAt(0);  //Para concatenar
+
+             
+       //recibenombre = nombrepeso (primeraletra,segundaletra,terceraletra,cuartaletra,quintaletra,sextaletra,septimaletra,peso);
+        
+       int recibeSuma = 0;//Para la suma
+       
+       int recibeMult = 0;//Para la multiplicacion
+       
+       String recibeconct;//Para concatenar
+       
+        //System.out.println("Su nombre es:" +primeraletra+segundaletra+terceraletra+cuartaletra+quintaletra+sextaletra+septimaletra);
+       //Para la suma
+       lisReferencia (nume1 , nume2); 
+       recibeSuma = lisValor (nume1,nume2);  
+       System.out.println("lis realizó suma con dato " + nume1 + "+" + nume2 + "con resultado " + recibeSuma);
+       
+       
+       //Para la multiplicacion
+       recibeMult = Mult (nume1,nume2);  
+       System.out.println("lis realizó multiplicacion con dato " + nume1 + "x" + nume2 + "con resultado " + recibeMult);
+       
+       
+       //Para concatenar
+       recibeconct = ConcatValor (letra1,letra2);  
+       System.out.println("lis realizó la union con dato " + letra1 + "+" + letra2 + "con resultado " + recibeconct);
+       
+        //System.out.println("Su nombre es:" +primeraletra+segundaletra+terceraletra+cuartaletra+quintaletra+sextaletra+septimaletra);
+       // System.out.println("su peso es:" +  peso);
+       //Ciclo Para
+       
+       for ( i=0; i<20; i++)
+           
+      
+           recibeacumu = Acumu (i);
+       
+       
+        System.out.println("lis realizó la suma es" + recibeacumu);
+        
+        for (i=1;i<=5;i++)
+        { 
+            char letraNom =sc.next().charAt(0);
+           
+        }
+        i=1;
+        while (i<=5)
+        {
+            char letraNom=sc.next().charAt(0);
+           i++;
+        }
+        i=1;
+        do
+        {
+            char letraNom=sc.next().charAt(0);
+            i++;
+        }while(i<=5);
+       
+   }
+  static void lisReferencia (int num1, int num2)
+     {     
+         int suma=0;
+         suma= num1 + num2;
+         System.out.println("lis realizó suma con dato " + num1 + "+" + num2 + "con resultado " + suma);
+    }
+  
+  static int lisValor (int num1, int num2)
+     {     
+         int suma=0;
+         suma = num1 + num2;
+ return suma;
+    }
+  
+  static int Mult (int num1, int num2)
+     {     
+         int mult=0;
+         mult = num1 * num2;
+  return mult;
+     }
+  
+  static String ConcatValor (char letra1, char letra2)
+     {     
+         String conct ;
+         conct = Character.toString (letra1)+ Character.toString (letra2);
+         
+  return conct;
+    }
+  
+   static int Acumu (int i)
+     {    
+        
+          suma = suma + i;
+ return suma;
+
+  
+     }
+ static String nombrepeso (char primeraletra, char segundaletra, char terceraletra,char cuartaletra,char quintaletra,char sextaletra,char septimaletra, double peso)
+     {     
+         String recibenombre ;
+          recibenombre= Character.toString (primeraletra)+ Character.toString (segundaletra)+Character.toString (terceraletra)+Character.toString (cuartaletra)+Character.toString (quintaletra)+Character.toString (sextaletra)+Character.toString (septimaletra)+ peso;
+         
+  return recibenombre;
+    }
+  
+}
